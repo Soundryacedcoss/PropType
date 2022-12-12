@@ -12,7 +12,7 @@ export const Tsk2Child2 = (props) => {
       <p>{props.num}</p>
       <button onClick={props.fun}>Click</button>
       <p>{props.boolean}</p>
-      <p>{Object}</p>
+      <p>{props.data.name1}</p>
       <p>{props.symbol.toString()}</p>
       </div>
   )
@@ -20,7 +20,7 @@ export const Tsk2Child2 = (props) => {
 Tsk2Child2.propTypes={
   name:PropTypes.string.isRequired,
   num:PropTypes.number.isRequired,
-  Object:PropTypes.object.isRequired,
+  data:PropTypes.object.isRequired,
   fun:PropTypes.func.isRequired,
   symbol:PropTypes.symbol.isRequired,
 }
